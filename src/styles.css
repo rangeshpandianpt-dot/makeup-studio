@@ -1,0 +1,156 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-rose-gold: var(--rose-gold);
+  --color-blush: var(--blush);
+  --color-ivory: var(--ivory);
+  --color-charcoal: var(--charcoal);
+
+  --font-display: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-script: "Great Vibes", cursive;
+
+  --shadow-luxe: 0 25px 60px -20px color-mix(in oklab, var(--gold) 35%, transparent);
+  --shadow-card: 0 10px 30px -10px color-mix(in oklab, var(--rose-gold) 25%, transparent);
+
+  --gradient-gold: linear-gradient(135deg, var(--gold) 0%, var(--rose-gold) 100%);
+  --gradient-soft: linear-gradient(180deg, var(--ivory) 0%, var(--background) 100%);
+}
+
+:root {
+  --radius: 0.75rem;
+  --background: oklch(0.995 0.003 80);
+  --foreground: oklch(0.22 0.02 30);
+
+  --ivory: oklch(0.98 0.012 75);
+  --gold: oklch(0.76 0.13 80);
+  --gold-soft: oklch(0.88 0.08 82);
+  --rose-gold: oklch(0.78 0.09 35);
+  --blush: oklch(0.94 0.025 25);
+  --charcoal: oklch(0.28 0.015 30);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.22 0.02 30);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.22 0.02 30);
+  --primary: oklch(0.76 0.13 80);
+  --primary-foreground: oklch(0.18 0.02 30);
+  --secondary: oklch(0.94 0.025 25);
+  --secondary-foreground: oklch(0.28 0.015 30);
+  --muted: oklch(0.96 0.01 60);
+  --muted-foreground: oklch(0.5 0.02 30);
+  --accent: oklch(0.78 0.09 35);
+  --accent-foreground: oklch(0.99 0.005 80);
+  --destructive: oklch(0.58 0.22 27);
+  --destructive-foreground: oklch(0.99 0.005 80);
+  --border: oklch(0.9 0.02 60);
+  --input: oklch(0.92 0.018 60);
+  --ring: oklch(0.76 0.13 80);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+}
+
+@utility text-gradient-gold {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility bg-gradient-gold {
+  background: var(--gradient-gold);
+}
+
+@utility bg-gradient-soft {
+  background: var(--gradient-soft);
+}
+
+@utility shadow-luxe {
+  box-shadow: var(--shadow-luxe);
+}
+
+@utility shadow-card-soft {
+  box-shadow: var(--shadow-card);
+}
+
+@utility font-script {
+  font-family: var(--font-script);
+}
+
+@utility hover-gold-lift {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hover-gold-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-luxe);
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes shimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+.animate-fade-up {
+  animation: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.shimmer-text {
+  background: linear-gradient(90deg, var(--gold) 0%, var(--rose-gold) 50%, var(--gold) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 4s linear infinite;
+}

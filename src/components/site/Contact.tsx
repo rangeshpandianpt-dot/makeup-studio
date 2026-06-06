@@ -34,7 +34,7 @@ export function Contact() {
             ))}
 
             <div className="flex gap-4 pt-2">
-              <a href="#" aria-label="Instagram" className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-charcoal hover:bg-gradient-gold hover:text-primary-foreground hover:border-transparent transition">
+              <a href="https://www.instagram.com/mirrormagic_makeupstudio_theni/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-charcoal hover:bg-gradient-gold hover:text-primary-foreground hover:border-transparent transition">
                 <Instagram size={20} />
               </a>
               <a href="#" aria-label="Facebook" className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-charcoal hover:bg-gradient-gold hover:text-primary-foreground hover:border-transparent transition">

@@ -14,7 +14,7 @@ export function Footer() {
             Based in Theni & Chennai, available across Tamil Nadu.
           </p>
           <div className="flex gap-3 mt-6">
-            <a href="#" aria-label="Instagram" className="w-10 h-10 rounded-full border border-ivory/20 flex items-center justify-center hover:bg-gradient-gold hover:border-transparent transition"><Instagram size={18} /></a>
+            <a href="https://www.instagram.com/mirrormagic_makeupstudio_theni/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 rounded-full border border-ivory/20 flex items-center justify-center hover:bg-gradient-gold hover:border-transparent transition"><Instagram size={18} /></a>
             <a href="#" aria-label="Facebook" className="w-10 h-10 rounded-full border border-ivory/20 flex items-center justify-center hover:bg-gradient-gold hover:border-transparent transition"><Facebook size={18} /></a>
             <a href="tel:+919999999999" aria-label="Phone" className="w-10 h-10 rounded-full border border-ivory/20 flex items-center justify-center hover:bg-gradient-gold hover:border-transparent transition"><Phone size={18} /></a>
             <a href="mailto:hello@mirrormagic.studio" aria-label="Email" className="w-10 h-10 rounded-full border border-ivory/20 flex items-center justify-center hover:bg-gradient-gold hover:border-transparent transition"><Mail size={18} /></a>

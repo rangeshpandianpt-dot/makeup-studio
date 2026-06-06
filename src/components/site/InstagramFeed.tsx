@@ -22,7 +22,9 @@ export function InstagramFeed() {
           {posts.map((src, i) => (
             <a
               key={i}
-              href="#"
+              href="https://www.instagram.com/mirrormagic_makeupstudio_theni/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
               className="relative block aspect-square overflow-hidden rounded-xl group"
             >
               <img src={src} alt="Instagram post" loading="lazy" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
@@ -34,7 +36,9 @@ export function InstagramFeed() {
         </div>
         <div className="text-center mt-10">
           <a
-            href="#"
+            href="https://www.instagram.com/mirrormagic_makeupstudio_theni/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-7 py-3 rounded-full border border-gold text-charcoal hover:bg-gradient-gold hover:text-primary-foreground hover:border-transparent transition-all"
           >
             <Instagram size={18} /> Follow on Instagram

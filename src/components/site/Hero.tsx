@@ -17,10 +17,10 @@ export function Hero() {
 
       <div className="relative mx-auto max-w-7xl px-6 py-32 w-full">
         <div className="max-w-2xl animate-fade-up">
-          <p className="font-script text-3xl md:text-4xl text-rose-gold mb-4">
+          <p className="font-script text-3xl md:text-4xl text-[#FF829D] mb-4 drop-shadow-sm">
             Mirror Magic
           </p>
-          <span className="inline-block text-xs uppercase tracking-[0.4em] text-gold mb-6">
+          <span className="inline-block text-xs uppercase tracking-[0.4em] text-[#E6B325] mb-6 drop-shadow-sm font-semibold">
             Certified by Lakme Academy
           </span>
           <h1 className="font-display text-5xl md:text-7xl leading-[1.05] text-charcoal mb-6">

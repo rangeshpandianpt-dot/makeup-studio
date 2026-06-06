@@ -16,7 +16,7 @@ export function Contact() {
             {[
               { icon: Phone, label: "Call us", value: "+91 99999 99999", href: "tel:+919999999999" },
               { icon: Mail, label: "Email us", value: "hello@mirrormagic.studio", href: "mailto:hello@mirrormagic.studio" },
-              { icon: MapPin, label: "Studio", value: "Theni, Tamil Nadu • Chennai", href: "#" },
+              { icon: MapPin, label: "Studio", value: "2nd Floor, Srinivasa Complex, Periyakulam Main Rd, opp. Convent School, NRT Nagar, Theni, Unjampatti, Tamil Nadu 625531", href: "#" },
             ].map((c) => (
               <a
                 key={c.label}
@@ -46,7 +46,7 @@ export function Contact() {
           <div className="rounded-2xl overflow-hidden border border-border shadow-card-soft min-h-[400px]">
             <iframe
               title="Studio location"
-              src="https://www.google.com/maps?q=Theni,Tamil+Nadu&output=embed"
+              src="https://www.google.com/maps?q=Mirror+Magic+Makeup+Studio,+2nd+Floor,+Srinivasa+Complex,+Periyakulam+Main+Rd,+opp.+Convent+School,+NRT+Nagar,+Theni,+Unjampatti,+Tamil+Nadu+625531&output=embed"
               width="100%"
               height="100%"
               style={{ minHeight: 400, border: 0 }}

@@ -46,7 +46,7 @@ export function Contact() {
           <div className="rounded-2xl overflow-hidden border border-border shadow-card-soft min-h-[400px]">
             <iframe
               title="Studio location"
-              src="https://www.google.com/maps?q=Mirror+Magic+Makeup+Studio,+2nd+Floor,+Srinivasa+Complex,+Periyakulam+Main+Rd,+opp.+Convent+School,+NRT+Nagar,+Theni,+Unjampatti,+Tamil+Nadu+625531&output=embed"
+              src="https://maps.google.com/maps?q=Mirror%20Magic%20Makeup%20Studio,%20Theni,%20Tamil%20Nadu&t=&z=15&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
               style={{ minHeight: 400, border: 0 }}

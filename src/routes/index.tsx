@@ -37,7 +37,14 @@ export const Route = createFileRoute("/")({
           name: "Mirror Magic Makeup Studio",
           description,
           areaServed: "Tamil Nadu",
-          address: { "@type": "PostalAddress", addressLocality: "Theni", addressRegion: "Tamil Nadu", addressCountry: "IN" },
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "2nd Floor, Srinivasa Complex, Periyakulam Main Rd, opp. Convent School, NRT Nagar, Unjampatti",
+            addressLocality: "Theni",
+            addressRegion: "Tamil Nadu",
+            postalCode: "625531",
+            addressCountry: "IN"
+          },
         }),
       },
     ],
